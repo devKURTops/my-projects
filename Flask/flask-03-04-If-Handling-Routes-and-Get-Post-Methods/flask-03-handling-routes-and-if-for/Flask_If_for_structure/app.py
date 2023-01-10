@@ -7,7 +7,7 @@ app = Flask(__name__)
 # and assign to the route of ('/')
 @app.route("/")
 def head():
-    first="This is my first conditions experience"
+    first="What you believe you can achieve."
     return render_template("index.html", message = first)
 
 
@@ -15,9 +15,9 @@ def head():
 # and assign to the route of ('/')
 @app.route("/kurt")
 def header():
-    names =["Serdar", "Sam", "Jasper"]
-    #numbers = range(1, 11)
-    return render_template("body.html", object = names)
+    #names =["James", "Susan", "Casper"]
+    numbers = range(1, 11)
+    return render_template("body.html", object = numbers)
 
 
 # run this app in debug mode on your local.
